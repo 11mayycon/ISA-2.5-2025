@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# 🤖 ISA 2.5 - Guia de Instalação e Dependências
 
-This contains everything you need to run your app locally.
+Este projeto é uma plataforma de Inteligência Operacional de última geração. Siga os passos abaixo para configurar o ambiente de desenvolvimento.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1fYOWFZez_gJuhvygee5gjBOGGy0RF61U
+## 📋 Pré-requisitos
+- **Node.js**: Versão 18 ou superior.
+- **NPM** ou **Yarn**.
+- **Chave de API Gemini**: Necessária para o funcionamento do Chat IA.
 
-## Run Locally
+## 📦 Dependências do Projeto
 
-**Prerequisites:**  Node.js
+### Core
+- `react` & `react-dom`: Biblioteca base UI.
+- `react-router-dom`: Gerenciamento de rotas e navegação.
 
+### Inteligência e Dados
+- `@google/genai`: SDK oficial para integração com modelos Gemini 2.5/3.
+- `recharts`: Renderização de gráficos financeiros e operacionais.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Estilização e Ícones
+- `tailwindcss`: Framework CSS utilitário.
+- `lucide-react`: Pack de ícones vetoriais tecnológicos.
+
+## 🚀 Como Rodar
+
+1. **Instalar Dependências**:
+   ```bash
+   npm install
+   ```
+
+2. **Configurar Variáveis de Ambiente**:
+   Crie um arquivo `.env` na raiz e adicione:
+   ```env
+   VITE_API_KEY=sua_chave_aqui
+   ```
+
+3. **Iniciar em modo de desenvolvimento**:
+   ```bash
+   npm run dev
+   ```
+
+## 🛠️ Scripts Disponíveis
+- `npm run dev`: Inicia o servidor Vite local.
+- `npm run build`: Compila o projeto para produção.
+- `npm run preview`: Visualiza o build de produção localmente.
